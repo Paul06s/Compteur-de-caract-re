@@ -4,27 +4,47 @@
 
 html{
     height: 100%;
+    width: 100%;
 }
 
 body{
-    width: 80%;
+    width: 100%;
     margin: 10vh auto 0;
     padding: 10vh auto 0;
     display: flex;
     flex-direction: column;
     min-height: 100%; /* Use vh unit to make sure the body takes at least the height of the viewport */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.header{
+    width: 100%;
+    height: 6vh;
+    margin: auto;
+    color: burlywood;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    position: fixed;
+    top: -2px;
+    text-align: center;
+}
+
+.header h1{
+    margin: 1vh auto;
+}
+
+
 .consignes {
+    margin: 5vh auto;
+    width: 75%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vh;
     padding: 20vh auto;
     color: burlywood;
+    text-align: center;
 
 }
 .compteur {
-    margin: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -37,8 +57,20 @@ body{
     margin: 0.8vh auto;
 }
 
-.compteur input, .compteur button, .compteur textarea{
+.compteur p{
+    font-size: 4vh;
+    font-weight: 700;
+    color: burlywood;
+    margin-bottom: 1vh
+}
+.compteur input, .compteur button{
     height: 5vh;
+    font-size: 3.5vh;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.compteur textarea{
     font-size: 3.5vh;
     font-weight: 700;
     border-radius: 5px;
@@ -48,11 +80,15 @@ body{
     color: burlywood;
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
+
 .afficheur {
     margin: auto;
 }
+
 main{
     flex: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer{
@@ -64,7 +100,7 @@ footer{
 
 .credits{
     width: auto;
-    margin: 0 auto;
+    margin: -2px auto;
     text-align: center;
 }
 
